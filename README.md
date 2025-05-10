@@ -1,59 +1,97 @@
-# TicTacToePWA
+# ♟️ Tic Tac Toe — Angular 19 + Signals + PWA
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+A fun, interactive **Tic Tac Toe** game built with **Angular 19**, leveraging **Signals** for reactivity and **PWA (Progressive Web App)** features for offline access and installability.
 
-## Development server
+### 🔗 Live Demo  
+▶️ [Play Now on Vercel](https://tic-tac-toe-pwa-tau.vercel.app/)
 
-To start a local development server, run:
+---
+
+## 🚀 Features
+
+- ✅ Built with **Angular 19**
+- 🔁 Reactive state using **Angular Signals**
+- 📱 Fully functional **PWA**: installable, offline-capable
+- 🎮 Simple and clean game logic
+- 🎨 Modern responsive UI
+- 🌗 Light-weight and mobile friendly
+
+---
+
+## 📸 Preview
+
+![image](https://github.com/user-attachments/assets/264a3351-3c15-4d74-a986-052744b88989)
+
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Description |
+|------------|-------------|
+| [Angular 19](https://angular.io/) | Frontend framework |
+| [Angular Signals](https://angular.dev/guide/signals) | Reactive state management |
+| [@angular/pwa](https://angular.io/guide/service-worker-intro) | PWA integration |
+| SCSS | Custom styles and responsive layout |
+| Vercel | Deployment |
+
+---
+
+## 📦 Installation & Run Locally
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/basmasalim/TicTacToe-PWA.git
+cd TicTacToe-PWA
+````
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Run locally**
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+4. **Build for production (with PWA)**
 
 ```bash
-ng generate component component-name
+ng build --configuration=production
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Then serve the `dist/` folder using any static server (e.g., `http-server` or Vercel).
 
-```bash
-ng generate --help
+
+## 📲 PWA Support
+
+* Works offline after first load
+* Can be installed to homescreen on mobile and desktop
+* Uses Angular's Service Worker
+
+> To test PWA features locally, run a production build and serve it using a static server (not `ng serve`).
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+  ├── app/
+  │   ├── app.component.ts
+  │   ├── game-logic/
+  │   └── square/ (Component)
+  ├── assets/
+  ├── manifest.webmanifest
+  ├── ngsw-config.json
 ```
 
-## Building
+---
 
-To build the project run:
+## 🙌 Credits
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Created with ❤️ by [Basma Salim](https://github.com/basmasalim)
