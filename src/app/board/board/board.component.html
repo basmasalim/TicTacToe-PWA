@@ -1,0 +1,17 @@
+<h2 class="status">Current Player: {{ player }}</h2>
+
+<button nbButton outline status="danger" class="new-game" (click)="newGame()">
+  🔄 Start New Game
+</button>
+
+@if (winner()) {
+<h2 class="winner">🎉 Player {{ winner() }} won the game!</h2>
+}
+
+<section class="board">
+  @for (val of squares(); track $index) {
+  <app-square [value]="val" (click)="makeMove($index)"> </app-square>
+  }
+</section>
+
+<h1>tic.<br /><span>tac.</span><br />toe.</h1>

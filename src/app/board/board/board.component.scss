@@ -1,0 +1,99 @@
+h1 {
+  position: absolute;
+  left: -1.5%;
+  top: 58%;
+  color: hsl(49, 69%, 55%);
+  line-height: 0.5;
+  font-size: 9.5rem;
+  span {
+    color: #72cff9;
+  }
+}
+
+h2 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.new-game {
+  display: block;
+  margin-block: 20px;
+  margin-inline: auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  color: #5a1e76;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.new-game:hover {
+  background-color: #2b0040;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 8px;
+  margin-top: 20px;
+}
+
+app-square {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+app-square:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .board {
+    grid-template-columns: repeat(3, 80px);
+  }
+
+  app-square {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 6rem;
+  }
+  .board {
+    grid-template-columns: repeat(3, 60px);
+  }
+
+  app-square {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  .status {
+    font-size: 18px;
+  }
+}
