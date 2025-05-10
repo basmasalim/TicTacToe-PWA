@@ -20,7 +20,7 @@ A fun, interactive **Tic Tac Toe** game built with **Angular 19**, leveraging **
 
 ## 📸 Preview
 
-![image](https://github.com/user-attachments/assets/264a3351-3c15-4d74-a986-052744b88989)
+![image](https://github.com/user-attachments/assets/f623073a-9d79-48ce-ba68-911fa31f1f7b)
 
 
 ---
